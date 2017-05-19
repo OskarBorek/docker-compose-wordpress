@@ -7,7 +7,7 @@ wordpress:
   volumes:
         - .\wp-content:/var/www/html/wp-content
   environment:
-      WORDPRESS_DB_NAME: usr_p378165_1
+      WORDPRESS_DB_NAME: exampledatabase
       WORDPRESS_DB_PASSWORD: examplepass
 wordpress_db:
   image: mariadb
