@@ -20,7 +20,7 @@ services:
         - .\docker\data\importDatabase:/docker-entrypoint-initdb.d
 
       environment:
-        MYSQL_ROOT_PASSWORD: examplepass
+        MYSQL_ROOT_PASSWORD: password
 
 
     phpmyadmin:
