@@ -16,8 +16,8 @@ services:
     wordpress_db:
       image: mysql
       volumes:
-        - .\docker\data\database:/var/lib/mysql
-        - .\docker\data\importDatabase:/docker-entrypoint-initdb.d
+        - .\docker\database:/var/lib/mysql
+        - .\docker\importDatabase:/docker-entrypoint-initdb.d
 
       environment:
         MYSQL_ROOT_PASSWORD: password
