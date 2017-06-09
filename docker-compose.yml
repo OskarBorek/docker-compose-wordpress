@@ -24,11 +24,12 @@ services:
 
 
     phpmyadmin:
-      image: corbinu/docker-phpmyadmin
+      image: phpmyadmin/phpmyadmin
       links:
         - wordpress_db:mysql
       ports:
         - 8181:80
       environment:
-        MYSQL_USERNAME: root
-        MYSQL_ROOT_PASSWORD: password
+        PMA_HOST: wordpress_db
+        PMA_USER: root
+        PMA_PASSWORD: password
